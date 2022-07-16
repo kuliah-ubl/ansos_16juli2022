@@ -14,6 +14,11 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome(ChromeDriverManager().install()) #using code here
 #url launch
 driver.get("http://google.com")
+
+# driver.find_element_by_id('lst-ib').clear() #not use
+# driver.find_element_by_id('lst-ib').send_keys('hello world') #not use
+# driver.find_element_by_name("btnK").click() //not use
+
 #identify edit box with name
 driver.implicitly_wait(30)
 driver.find_element(By.NAME, "q").send_keys('hello world')
